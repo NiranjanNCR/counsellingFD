@@ -39,7 +39,7 @@ const ContactForm = () => {
     }
 
     try {
-      const response = await fetch('https://counsellingdb.onrender.com/submit', {
+      const response = await fetch('https://counsellingb.onrender.com/submit', {
         method: 'POST',
         body: data,
       });
