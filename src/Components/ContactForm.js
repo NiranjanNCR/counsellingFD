@@ -33,9 +33,10 @@ const ContactForm = () => {
 
     try {
       const response = await fetch('https://counselling-b.vercel.app/submit', {
-        method: 'POST',
-        body: data,
-      });
+  method: 'POST',
+  body: data,
+});
+
 
       if (response.ok) {
         alert('Form submitted successfully!');
