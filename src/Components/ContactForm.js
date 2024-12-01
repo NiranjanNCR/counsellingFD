@@ -32,10 +32,15 @@ const ContactForm = () => {
     }
 
     try {
-      const response = await fetch('https://counselling-b.vercel.app/submit', {
+   const response = await fetch('https://counselling-b.vercel.app/submit', {
   method: 'POST',
   body: data,
+  headers: {
+    'Accept': 'application/json',
+  },
+  mode: 'cors', // Ensure CORS is enabled
 });
+
 
 
       if (response.ok) {
