@@ -39,7 +39,7 @@ const ContactForm = () => {
     }
 
     try {
-      const response = await fetch('https://counsellingb.onrender.com/submit', {
+      const response = await fetch('https://counselling-b.vercel.app//submit', {
         method: 'POST',
         body: data,
       });
@@ -108,11 +108,7 @@ const ContactForm = () => {
             placeholder="Your Message"
             required
           ></textarea>
-          <div className="div-input-file">
-            <label htmlFor="file">Upload File:</label>
-            <input type="file" name="file" onChange={handleFileChange} />
-          </div>
-          <button type="submit">Send</button>
+         <button type="submit">Send</button>
         </div>
       </form>
     </section>
