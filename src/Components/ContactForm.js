@@ -23,13 +23,6 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Check for empty fields
-    if (!formData.firstName || !formData.email || !formData.message) {
-      alert('Please fill in all required fields.');
-      return;
-    }
-
-    // Prepare data for submission
     const data = new FormData();
     for (const key in formData) {
       data.append(key, formData[key]);
@@ -39,25 +32,20 @@ const ContactForm = () => {
     }
 
     try {
-const response = await fetch('https://counselling-b.vercel.app/submit', {
-  method: 'POST',
-  body: data,
-});
-
+      const response = await fetch('https://counselling-b.vercel.app/submit', {
+        method: 'POST',
+        body: data,
+      });
 
       if (response.ok) {
         alert('Form submitted successfully!');
-        // Reset form
         setFormData({ firstName: '', lastName: '', email: '', number: '', message: '' });
         setFile(null);
       } else {
-        const errorData = await response.text();
-        console.error('Server error:', errorData);
-        alert('Failed to submit the form. Please try again later.');
+        alert('Failed to submit the form.');
       }
     } catch (error) {
-      console.error('Submission error:', error);
-      alert('An error occurred while submitting the form.');
+      console.error('Error submitting form:', error);
     }
   };
 
@@ -73,7 +61,6 @@ const response = await fetch('https://counselling-b.vercel.app/submit', {
               value={formData.firstName}
               onChange={handleChange}
               placeholder="First Name"
-              required
             />
             <input
               type="text"
@@ -90,7 +77,6 @@ const response = await fetch('https://counselling-b.vercel.app/submit', {
               value={formData.email}
               onChange={handleChange}
               placeholder="Email"
-              required
             />
             <input
               type="number"
@@ -104,12 +90,11 @@ const response = await fetch('https://counselling-b.vercel.app/submit', {
             name="message"
             value={formData.message}
             onChange={handleChange}
-            cols="107"
+            cols="30"
             rows="5"
             placeholder="Your Message"
-            required
           ></textarea>
-         <button type="submit">Send</button>
+          <button type="submit">Send</button>
         </div>
       </form>
     </section>
