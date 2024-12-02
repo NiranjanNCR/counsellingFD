@@ -538,5 +538,7 @@ form textarea{
     margin-top: .2rem;
     max-width: 300px;
 }
+ form button{
+  margin:.5rem;
 
 }
