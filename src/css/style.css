@@ -120,6 +120,7 @@
 .program-list ul{
     display: flex;
     flex-direction: column;
+    gap:.5rem;
 }
 .program-list.open{
     display: block;
