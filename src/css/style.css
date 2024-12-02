@@ -21,44 +21,90 @@
 --heading-font-weight:600;
 }
 
-.mainNav{
+/* Parent container for the navigation bar */
+.mainNav {
     background-color: var(--button-background);
     width: 100%;
-    height: auto;
-    z-index: -1;
-    /* position:static; */
-    /* max-height: 6rem; */
+    z-index: 1000; /* Bring the navbar to the front */
+    position: relative;
 }
 
-.navContainer{
+/* Navigation container */
+.navContainer {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
-    padding: 25px 100px 25px 100px;
+    padding: 25px 100px;
 }
 
-.nav-Items ul{
+/* Program dropdown styles */
+.program-list {
+    position: absolute; /* Remove from normal flow */
+    background-color: var(--btn-background-image); /* Dropdown background */
+    /* border: 1px solid var(--list-color); Optional border */
+    top: 100%; /* Position below the parent li */
+    left: 0;
+    width: 200px; /* Fixed width for the dropdown */
+    display: none; /* Hidden by default */
+    z-index: 999;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+/* Show dropdown when open */
+.program-list.open {
+    display: block; /* Make it visible */
+}
+
+/* Dropdown items */
+.program-list ul {
+    margin: 0;
+    padding: 10px 0;
+    list-style: none;
+    z-index: 9999999999999999999;
+    background-color: var(--button-background);
+}
+
+.program-list ul li {
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    
+}
+
+.program-list ul li:hover {
+    background-color: var(--button-background);
+    color: white;
+}
+
+/* Adjust navbar items */
+.nav-Items ul {
     display: flex;
     gap: 2rem;
+    position: relative; /* Anchor for dropdown positioning */
 }
 
-.nav-Items ul li{
+.nav-Items ul li {
     list-style: none;
+    position: relative; /* Anchor for absolute dropdown */
 }
-.nav-Items ul li a{
+
+.nav-Items ul li a {
     text-decoration: none;
     color: var(--list-color);
     font-size: var(--p-font-size);
 }
-.booking-btn{
+
+/* Booking button */
+.booking-btn {
     height: 2rem;
     width: 10rem;
     background: var(--btn-background-image);
     border: none;
     font-weight: 600;
     font-size: 1.1rem;
-    color: white;;
+    color: white;
 }
+
 
 
 
