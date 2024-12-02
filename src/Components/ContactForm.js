@@ -9,44 +9,25 @@ const ContactForm = () => {
     number: '',
     message: '',
   });
-  const [file, setFile] = useState(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleFileChange = (e) => {
-    setFile(e.target.files[0]);
-  };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const data = new FormData();
-    for (const key in formData) {
-      data.append(key, formData[key]);
-    }
-    if (file) {
-      data.append('file', file);
-    }
-
     try {
-   const response = await fetch('https://counselling-b.vercel.app/submit', {
-  method: 'POST',
-  body: data,
-  headers: {
-    'Accept': 'application/json',
-  },
-  mode: 'cors', // Ensure CORS is enabled
-});
-
-
+      const response = await fetch('https://backend-zmca.onrender.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
 
       if (response.ok) {
         alert('Form submitted successfully!');
         setFormData({ firstName: '', lastName: '', email: '', number: '', message: '' });
-        setFile(null);
       } else {
         alert('Failed to submit the form.');
       }
@@ -67,6 +48,7 @@ const ContactForm = () => {
               value={formData.firstName}
               onChange={handleChange}
               placeholder="First Name"
+              required
             />
             <input
               type="text"
@@ -74,6 +56,7 @@ const ContactForm = () => {
               value={formData.lastName}
               onChange={handleChange}
               placeholder="Last Name"
+              required
             />
           </div>
           <div className="div-input">
@@ -83,6 +66,7 @@ const ContactForm = () => {
               value={formData.email}
               onChange={handleChange}
               placeholder="Email"
+              required
             />
             <input
               type="number"
@@ -90,6 +74,7 @@ const ContactForm = () => {
               value={formData.number}
               onChange={handleChange}
               placeholder="Mobile Number"
+              required
             />
           </div>
           <textarea
@@ -99,6 +84,7 @@ const ContactForm = () => {
             cols="30"
             rows="5"
             placeholder="Your Message"
+            required
           ></textarea>
           <button type="submit">Send</button>
         </div>
