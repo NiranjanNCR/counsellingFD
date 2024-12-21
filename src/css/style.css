@@ -36,6 +36,11 @@
     padding: 25px 100px;
 }
 
+.logo img{
+max-width: 8rem;
+/* max-height: 2rem; */
+}
+
 /* Program dropdown styles */
 .program-list {
     position: absolute; /* Remove from normal flow */
@@ -244,7 +249,7 @@ font-weight: var(--heading-font-weight);
     background-color: rgb(218, 223, 253);
 }
 .sectionTwo h3{
-    font-size: var(--heading-font-size);
+    /* font-size: var(--heading-font-size); */
 }
 
 .sectionTwoContainer{
@@ -286,10 +291,20 @@ font-weight: var(--heading-font-weight);
     align-items: center;
     justify-content: center;
     /* gap: .6rem; */
+    max-width: 20rem;
+text-align: center;
+}
+.mentors p {
+margin-bottom: .5rem;
+background: var(--btn-background-image);
+color: white;
+font-weight: 600;
+padding: .4rem;
 }
 .mentors img{
     width: 16rem;
-    height: auto;
+    height: 14rem;
+    /* height: auto; */
     margin-bottom: 15px;
 }
 .mentor p{
@@ -506,14 +521,19 @@ footer{
 @media(max-width: 460px) {
     .menubtn {
         display: block;
+        width: 4rem;
     }
+    
     .navContainer{
         display: flex;
-        align-items:flex-start;
-        justify-content: space-between;
-        padding: 25px 60px 25px 60px;
+        /* align-items:flex-start; */
+        /* justify-content: flex-start; */
+        /* gap: 2rem; */
+        padding: 20px
     }
-
+.logo img{
+    width: 4rem;
+}
     .nav-Items{
         width: 100%;
         /* background-color: aqua; */
