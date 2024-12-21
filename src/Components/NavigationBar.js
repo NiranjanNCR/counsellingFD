@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import "../css/style.css";
 // import HeroImg from "../../public/images/hero-img.jpg"
 import HeroImg from "../images/hero-img.jpg";
+import logo from "../images/logo PKD.png"
 import { FaBars } from "react-icons/fa";
 
 const NavigationBar = () => {
@@ -20,7 +21,7 @@ const NavigationBar = () => {
     <>
       <nav className='mainNav'>
        <div className='navContainer'>
-           <div className='logo'><img src="#" alt="logo.." /></div>
+           <div className='logo'><img src={logo} alt="logo.." /></div>
            <div className={`nav-Items ${menuOpen ? 'open' : ''}`}>
                <ul>
                <li><a href="#">Home</a></li>
@@ -28,9 +29,13 @@ const NavigationBar = () => {
                <li><a onClick={toggleProgram} href="#">Programs</a>
                <div className={`program-list ${listOpen ? 'open' : '' }`} >
                <ul>
-                   <li>Program1</li>
-                   <li>Program1</li>
-                   <li>Program1</li>
+                   <li>DISC</li>
+                   <li>Myers-briggs Type Indicator</li>
+                   <li>Personality Factor Questionnaire</li>
+                   <li>Eysenck Personality Inventory  </li>
+                   <li>Enneagram test  </li>
+                   <li>Caliper</li>
+                   <li>Minnesota Multiphasic Personality Inventory </li>
                </ul>
                </div>
                </li>
@@ -48,7 +53,7 @@ const NavigationBar = () => {
 
 <div className='hero-left'>
     <h1>Take your <span>First</span> Step <span>wisely</span></h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, aliquam.</p>
+    <p>Empower your journey to success build essential skills for growth gain unshakable con</p>
 </div>
 <div className='hero-image'><img src={HeroImg} alt="" /></div>
 
