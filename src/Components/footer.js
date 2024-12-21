@@ -9,18 +9,19 @@ const Footer = () => {
          <div className='footer-container'>
              <div className='f-contant'>
                  <h1>About US</h1>
-                 <p>Our music school was founded in 1999 to help students of all ages from all over the state to pursue their dream of becoming musicians. If you would like to learn how to play any musical instrument, our school is the place for you, regardless of your age and social status. We offer group and private lessons for children and adults.</p>
+                 <p>Welcome to “PEHLAKADAM”, your trusted companion in unlocking your true potential. Our mission is to empower individuals to transform their lives through comprehensive personality development, expert career guidance, and actionable self-improvement strategies.</p>
              </div>
 
              <div className='f-contant'>
              <h1>Our Programms</h1>
              <ul>
-               <li><a href="#">prg</a></li>
-               <li><a href="#">prg</a></li>
-               <li><a href="#">prg</a></li>
-               <li><a href="#">prg</a></li>
-               <li><a href="#">prg</a></li>
-               <li><a href="#">prg</a></li>
+               <li><a href="#">DISC</a></li>
+               <li><a href="#">Myers-briggs Type Indicator </a></li>
+               <li><a href="#">Personality Factor Questionnaire</a></li>
+               <li><a href="#">Eysenck Personality Inventory</a></li>
+               <li><a href="#">Enneagram test</a></li>
+               <li><a href="#">Caliper</a></li>
+               <li><a href="#">Minnesota Multiphasic Personality Inventory </a></li>
              </ul>
              </div>
 
