@@ -1,5 +1,7 @@
 import React from 'react';
 import img1 from '../images/nrj.png'
+import img2 from '../images/mohit_m.jpeg'
+import img3 from '../images/manish_m.jpeg'
 import style from '../css/style.css';
 
 const Mentors = () => {
@@ -9,19 +11,20 @@ const Mentors = () => {
          <h2>Mentors</h2>
          <div className='mentors-container'>
          <div className='mentors'>
-             <img src={img1} alt="" />
-             <p>Name</p>
-             <span>Title name</span>
+             <img src={img2} alt="" />
+             <p>MOHIT ANAND DUBEY</p>
+             <span> BITS PILANI </span>
+             {/* <span>UNIFIED COMMUNICATIONS AND COLLABORATION </span> */}
          </div>
          <div className='mentors'>
              <img src={img1} alt="" />
-             <p>Name</p>
-             <span>Title name</span>
+             <p>NIRANJAN SINGH</p>
+             <span>PUNJABI UNIVERSITY PATIALA</span>
          </div>
          <div className='mentors'>
-             <img src={img1} alt="" />
-             <p>Name</p>
-             <span>Title name</span>
+             <img src={img3} alt="" />
+             <p>MANISH KUMAR RANA</p>
+             <span>BITS PILANI</span>
          </div>
          </div>
       </section>
