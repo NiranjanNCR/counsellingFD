@@ -18,9 +18,10 @@ const HomeSecOne = () => {
                 <img src={sectionOneImg} alt="" />
             </div>
             <div className='container-one-right'>
-                <h2>Welcome to Our counselors</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio est neque delectus ratione numquam ipsa dignissimos ex ut, eveniet provident praesentium, illum exercitationem architecto. Enim, ipsa. Similique fugiat voluptate nemo?</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio est neque delectus ratione numquam ipsa dignissimos ex ut, eveniet provident praesentium, illum exercitationem architecto. Enim, ipsa. Similique fugiat voluptate nemo?</p>
+                <h2>Welcome to Pehlakadam</h2>
+                <p>Welcome to “PEHLAKADAM”, your trusted companion in unlocking your true potential. Our mission is to empower individuals to transform their lives through comprehensive personality development, expert career guidance, and actionable self-improvement strategies.</p>
+                <p>At “PEHLAKADAM”, we believe that growth being with right tools and support. Whether you’re striving for personal confidence personal confidence, professional excellence, or a more fulfilling life.</p>
+                <p>We’re here to guide you every step of the way. Join us to explore tailored programs, interactive workshops, and insightful resources designed to help you build skills, achieve clarity, and make confident decision for a brighter future. Let’s grow together!</p>
                  <button className='booking-btn'>See more</button>
             </div>
         </div>
