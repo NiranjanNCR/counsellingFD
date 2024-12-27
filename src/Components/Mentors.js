@@ -1,7 +1,7 @@
 import React from 'react';
 import img1 from '../images/nrj.png'
-import img2 from '../images/mohit_m.jpeg'
-import img3 from '../images/manish_m.jpeg'
+import img2 from '../images/mohit_m.png'
+import img3 from '../images/manish_m.png'
 import style from '../css/style.css';
 
 const Mentors = () => {
