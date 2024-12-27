@@ -107,6 +107,7 @@ max-width: 8rem;
     font-weight: 600;
     font-size: 1.1rem;
     color: white;
+ border: 1px solid white;
    transition: 1s;
 }
 .booking-btn:hover{
