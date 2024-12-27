@@ -16,7 +16,7 @@
 --mainContainer--padding: 2rem 10rem 2rem 10rem;
 --smallContainer--padding: 2rem 5rem 2rem 5rem;
 --msmallContainer--padding: 2rem 3rem 2rem 3rem;
---btn-background-image:linear-gradient(to left ,rgb(4, 107, 250),rgb(64, 167, 252));
+--btn-background-image:linear-gradient(to left ,rgb(54, 1, 103),rgb(119, 1, 246));
 --heading-font-size:2rem;
 --heading-font-weight:600;
 }
@@ -107,9 +107,11 @@ max-width: 8rem;
     font-weight: 600;
     font-size: 1.1rem;
     color: white;
+   transition: 1s;
 }
-
-
+.booking-btn:hover{
+    background: rgb(85, 2, 162);
+}
 
 
 /* Hero content start here */
