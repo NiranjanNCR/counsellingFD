@@ -6,7 +6,7 @@ const About = () => {
   return (
     <>
     <NavigationBar/>
-      about
+      Contact US
       <Footer/>
     </>
   )
