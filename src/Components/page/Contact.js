@@ -1,11 +1,15 @@
 import React from 'react'
+import Footer from '../footer'
+import NavigationBar from '../NavigationBar'
 
-const Contact = () => {
+const About = () => {
   return (
     <>
-     Contact us 
+    <NavigationBar/>
+      about
+      <Footer/>
     </>
   )
 }
 
-export default Contact
+export default About
