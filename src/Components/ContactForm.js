@@ -19,7 +19,7 @@ const ContactForm = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('https://backend-zmca.onrender.com/submit', {
+      const response = await fetch('http://localhost:5000/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
@@ -81,8 +81,8 @@ const ContactForm = () => {
             name="message"
             value={formData.message}
             onChange={handleChange}
-            cols="30"
-            rows="5"
+            // cols="30"
+            // rows="5"
             placeholder="Your Message"
             required
           ></textarea>
