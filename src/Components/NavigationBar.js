@@ -38,22 +38,22 @@ const NavigationBar = () => {
                 <div className={`program-list ${listOpen ? "open" : ""}`}>
                   <ul>
                     <li>
-                      <Link to="/programs/disc">DISC</Link>
+                      <Link to="/programs/program1">6th-8th Std Student</Link>
                     </li>
                     <li>
-                      <Link to="/programs/myers-briggs">Myers-Briggs Type Indicator</Link>
+                      <Link to="/programs/program2">9th-10th Std Student</Link>
                     </li>
                     <li>
-                      <Link to="/programs/personality-factor">
-                        Personality Factor Questionnaire
+                      <Link to="/programs/program3">
+                      11th-12th Std Student
                       </Link>
                     </li>
                     <li>
-                      <Link to="/programs/eysenck">
-                        Eysenck Personality Inventory
+                      <Link to="/programs/program4">
+                        Graduate
                       </Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link to="/programs/enneagram">Enneagram Test</Link>
                     </li>
                     <li>
@@ -63,7 +63,7 @@ const NavigationBar = () => {
                       <Link to="/programs/minnesota">
                         Minnesota Multiphasic Personality Inventory
                       </Link>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </li>
