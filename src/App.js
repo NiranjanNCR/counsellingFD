@@ -4,8 +4,8 @@ import NavigationBar from "./Components/NavigationBar";
 import Programs from "./Components/page/Programs";
 import Home from "./Components/page/Home";
 import About from "./Components/page/About";
-import Contact from "./Components/page/Resources";
-import Resources from "./Components/page/Contact"; // Ensure this exists.
+import Contact from "./Components/page/Contact";
+import Resources from "./Components/page/Rsources"; // Ensure this exists.
 
 
 const App = () => {
