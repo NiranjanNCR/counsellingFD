@@ -1,17 +1,20 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Disc from "../Disc";
+import Prgm1112 from "../Prgm1112";
+import Prgm68 from "../Prgm68";
+import Prgm910 from "../Prgm910";
+import PrgmGraduate from "../PrgmGraduate";
 
 const Programs = () => {
   return (
     <Routes>
-      <Route path="disc" element={<Disc />} />
-      <Route path="myers-briggs" element={<div>Myers-Briggs Program</div>} />
-      <Route path="personality-factor" element={<div>Personality Factor Questionnaire</div>} />
-      <Route path="eysenck" element={<div>Eysenck Personality Inventory</div>} />
-      <Route path="enneagram" element={<div>Enneagram Test</div>} />
+      <Route path="program1" element={<Prgm68 />} />
+      <Route path="program2" element={<Prgm910/>} />
+      <Route path="program3" element={<Prgm1112/>} />
+      <Route path="program4" element={<PrgmGraduate/>} />
+      {/* <Route path="enneagram" element={<div></div>} />
       <Route path="caliper" element={<div>Caliper</div>} />
-      <Route path="minnesota" element={<div>Minnesota Multiphasic Personality Inventory</div>} />
+      <Route path="minnesota" element={<div>Minnesota Multiphasic Personality Inventory</div>} /> */}
     </Routes>
   );
 };
