@@ -1,26 +1,26 @@
-import React from 'react';
-import ContactForm from './Components/ContactForm';
-import Footer from './Components/footer';
-import HomeSecOne from './Components/homeSecOne';
-import HomeSecTwo from './Components/homeSecTwo';
-import Mentors from './Components/Mentors';
-import NavigationBar from './Components/NavigationBar';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import NavigationBar from "./Components/NavigationBar";
+import Programs from "./Components/pages/Programs";
+import Home from "./Components/pages/Home";
+import About from "./Components/pages/About";
+import Contact from "./Components/pages/Resources";
+import Resources from "./Components/pages/Contact"; // Ensure this exists.
+
 
 const App = () => {
   return (
-    <>
-      <NavigationBar/>
-      <HomeSecOne/>
-      <HomeSecTwo/>
-      <Mentors/>
-      <ContactForm/>
-      <Footer/>
-    </>
-  )
-}
+    <Router>
+      {/* <NavigationBar /> */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/programs/*" element={<Programs />} />
+        <Route path="/resources" element={<Resources />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Router>
+  );
+};
 
-export default App
-
-
-
-
+export default App;
